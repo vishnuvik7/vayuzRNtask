@@ -16,7 +16,7 @@ class FavouriteScreen extends Component {
   }
 
   componentDidMount=()=>{
-    console.log("image",this.props.route.params.data)
+    console.log("image",this.props?.route?.params?.data)
 
     
   }
@@ -30,7 +30,7 @@ class FavouriteScreen extends Component {
               </View>
         
               <View style={{backgroundColor:'white',flex:1}}>
-                <Image source={{uri:this.props.route.params.data}} style={{width:windowWidth/1.1,height:windowWidth/2,alignSelf:'center',marginTop:windowHeight/3}}></Image>
+                <Image source={{uri:this.props?.route?.params?.data}} style={{width:windowWidth/1.1,height:windowWidth/2,alignSelf:'center',marginTop:windowHeight/3}}></Image>
 
               </View>
       </SafeAreaView>

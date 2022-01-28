@@ -32,7 +32,7 @@ class DiscoverScreen extends Component {
       if(response.data.status=="success")
       {
         this.setState({
-          image_url:response.data.message
+          image_url:response.data?.message
         })
 
         console.log("image_url",this.state.image_url)       
